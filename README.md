@@ -1,4 +1,4 @@
-# 🎮 Pokémon Terminal RPG
+[# 🎮 Pokémon Terminal RPG
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif" alt="Pikachu Animado" width="80"/>
@@ -69,4 +69,4 @@ $ git clone [https://github.com/TEU_USUARIO_AQUI/TEU_REPOSITORIO_AQUI.git](https
 $ cd teu-repositorio
 
 # 3. Executa o jogo
-$ python main.py
+$ python main.py](https://github.com/ryan-ruis/Meu-jogo-Pokemon.git)
