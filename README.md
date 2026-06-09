@@ -1,4 +1,4 @@
-[# 🎮 Pokémon Terminal RPG
+# 🎮 Pokémon Terminal RPG
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/25.gif" alt="Pikachu Animado" width="80"/>
@@ -7,21 +7,17 @@
   <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/1.gif" alt="Bulbasaur Animado" width="80"/>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/github/repo-size/TEU_USUARIO_AQUI/TEU_REPOSITORIO_AQUI?style=for-the-badge" alt="Tamanho do Repositório">
-  <img src="https://img.shields.io/github/languages/top/TEU_USUARIO_AQUI/TEU_REPOSITORIO_AQUI?style=for-the-badge&color=yellow" alt="Linguagem Principal">
-  <img src="https://img.shields.io/github/last-commit/TEU_USUARIO_AQUI/TEU_REPOSITORIO_AQUI?style=for-the-badge&color=red" alt="Último Commit">
-</p>
+
 
 <h4 align="center"> 
-	🚀 Pokémon Terminal RPG concluído com sucesso! 🏁
+  🚀 Pokémon Terminal RPG concluído com sucesso! 🏁
 </h4>
 
 <p align="center">
  <a href="#-sobre-o-projeto">Sobre</a> •
  <a href="#-funcionalidades">Funcionalidades</a> •
+ <a href="#-foco-em-poo">Foco em POO</a> •
  <a href="#-como-jogar">Como Jogar</a> •
- <a href="#-tecnologias">Tecnologias</a> •
  <a href="#-autor">Autor</a>
 </p>
 
@@ -29,44 +25,45 @@
 
 ## 📋 Sobre o Projeto
 
-Este projeto é um jogo de RPG baseado no universo Pokémon feito inteiramente em **Python** para correr direto no terminal. O jogo simula as mecânicas clássicas da franquia, como exploração na grama alta, captura de criaturas selvagens, batalhas contra treinadores/líderes de ginásio e gestão de recursos.
-
-> **Nota:** Desenvolvido como parte dos meus estudos em Programação Orientada a Objetos (POO), manipulação de listas e lógica de jogos!
+Este projeto é um jogo de RPG baseado no universo Pokémon desenvolvido inteiramente em **Python** para rodar direto no terminal. O jogo simula mecânicas clássicas como exploração de mapas, encontros aleatórios na grama alta, gerenciamento de equipe e batalhas em turnos.
 
 ---
 
-## ✨ Funcionalidades
+## ✨ Funcionalidades do Game
 
-* 🎒 **Criação de Treinador:** Escolhe o teu nome e começa a tua jornada com o teu fiel Pikachu clássico (Level 5)!
-* 🌿 **Exploração de Mapa (Grama Alta):** Explora o mapa com probabilidades dinâmicas de encontrar um Pokémon selvagem ou um Treinador de Estrada.
-* 🔴 **Sistema de Captura:** Usa as tuas Pokébolas para tentar capturar um dos 20 Pokémon disponíveis no ecossistema do jogo.
-* 🏟️ **Batalhas de Ginásio:** Desafia Líderes de Ginásio diretamente quando te sentires preparado!
-* 🏪 **Loja Pokémon:** Gasta o dinheiro ganho em batalhas para reabastecer o teu stock de Pokébolas.
-* 🏥 **Centro Pokémon (Novo!):** Cura completamente toda a tua equipa com a Enfermeira Joy após batalhas intensas.
+* 🎒 **Criação de Treinador:** Defina seu nome de usuário e comece sua jornada com um Pikachu inicial (Level 5).
+* 🌿 **Exploração Avançada:** Explore a grama alta com chances calculadas de encontrar Pokémons selvagens ou Treinadores de Estrada desafiadores.
+* 🔴 **Sistema de Captura:** Utilize suas Pokébolas consumíveis para tentar capturar novos companheiros para sua equipe.
+* 🏪 **Loja Pokémon:** Gerencie seu dinheiro ganho em batalhas para comprar suprimentos e reabastecer suas Pokébolas.
+* 🏥 **Centro Pokémon:** Recupere completamente os pontos de vida (HP) de toda a sua equipe conversando com a Enfermeira Joy.
+* 💾 **Sistema de Salvamento Automático:** O progresso do treinador e de seus Pokémons é salvo ao sair e carregado automaticamente ao iniciar o jogo, evitando ter que recomeçar do zero.
 
 ---
 
-## 🕹️ Demonstração Animada
+## 🧠 Foco em Orientação a Objetos (POO)
 
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3N5YmNidGd4ZnVwYW90eDZ1Z2szYmd2bDVxbWZ6eGN6djRtM3M3ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DRfu7EOmfC1W0/giphy.gif" alt="Animação de Batalha de Exemplo" width="450"/>
-</p>
+Este projeto foi desenvolvido como meu ambiente de consolidação e treino em **Programação Orientada a Objetos** em Python. Durante a construção da arquitetura do jogo, apliquei e exercitei conceitos pilares do paradigma:
+
+* **Classes e Objetos:** Toda a lógica estrutural é baseada em entidades reais do jogo (`Player`, `Inimigo`, `Pokemon`).
+* **Herança:** Utilizada extensivamente para estender os tipos de Pokémons e Treinadores a partir de classes base genéricas, reaproveitando atributos e comportamentos comuns.
+* **Polimorfismo:** Implementado na execução das batalhas e cálculo de ações dinâmicas baseadas na classe específica que está em campo.
+* **Persistência de Objetos (Pickle):** Desafio prático superado ao utilizar serialização binária com o módulo `pickle` para salvar e recuperar estados de instâncias completas de objetos direto em disco.
 
 ---
 
 ## 🚀 Como Jogar
 
 ### Pré-requisitos
-Antes de começares, vais precisar de ter instalado na tua máquina o [Python 3](https://www.python.org/downloads/).
+Você precisará apenas do [Python 3](https://www.python.org/downloads/) instalado na sua máquina.
 
-### 💻 Passo a Passo
+### 💻 Executando Localmente
 
 ```bash
-# 1. Clona este repositório
-$ git clone [https://github.com/TEU_USUARIO_AQUI/TEU_REPOSITORIO_AQUI.git](https://github.com/TEU_USUARIO_AQUI/TEU_REPOSITORIO_AQUI.git)
+# 1. Clone este repositório
+$ git clone [https://github.com/ryan-ruis/Meu-jogo-Pokemon.git](https://github.com/ryan-ruis/Meu-jogo-Pokemon.git)
 
-# 2. Entra na pasta do projeto
-$ cd teu-repositorio
+# 2. Entre na pasta do projeto
+$ cd pokemon-Ryan
 
-# 3. Executa o jogo
-$ python main.py](https://github.com/ryan-ruis/Meu-jogo-Pokemon.git)
+# 3. Execute o jogo
+$ python main.py
